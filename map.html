@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel = "stylesheet" href = "styles.css">
+    <title>
+        Food @ CMU: Map
+    </title>
+<body>
+<!--------------HTML for title + navigation bar-------------->
+<h1 id = "website-title">
+    <a href = "main_page.html" id = "title-link" style = "text-decoration: none">
+        <b>FOOD @ CMU</b>
+    </a>
+</h1>
+
+
+<h2 id = "website-subtitle">
+    <table id = "header-bar" width = 100%>
+        <tr>
+            <td class = "header-bar-cell" id = "Review">
+                <a href = "review.html">
+                    Write a Review
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Blocks">
+                <a href = "donate.html">
+                    Donate Blocks
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Map">
+                <a href = "map.html">
+                    Map
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "About">
+                <a href = "about.html">
+                    About
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Login">
+                <a href = "login.html">
+                    Login
+                </a>
+            </td>
+        </tr>
+    </table>
+</h2>
+
+<!------------End of HTML for title + navigation bar----------->
+
+<div id="map" style="width:100%;height:550px;background:yellow;"></div>
+
+<script>
+
+function myMap() {
+var myCenter = new google.maps.LatLng(40.442490, -79.939649);
+var mapOptions = {
+    center: new google.maps.LatLng(40.443817, -79.944511),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.roadmap
+}
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Reznik</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Reznik</b>, also referred to as <b>Carnegie Mellon Cafe</b>, With a diner menu, CM Café offers eggs, burgers and milkshakes all day and night long. This menu has everything you could crave while studying for your final, sitting at your desk or walking through campus.</p>'+
+      '<p>Attribution: Carnegie Mellon Cafe, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=88</a> '+
+      '(last visited September 22, 2018).</p>'+
+      '</div>'+
+      '</div>';
+
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+var myCenter1 = new google.maps.LatLng(40.443315, -79.942605);
+var marker1 = new google.maps.Marker({position:myCenter1});
+  marker1.setMap(map);
+
+var myCenter2 = new google.maps.LatLng(40.442793, -79.945866);
+var marker2 = new google.maps.Marker({position:myCenter2});
+  marker2.setMap(map);
+
+var myCenter3 = new google.maps.LatLng(40.442907, -79.941424);
+var marker3 = new google.maps.Marker({position:myCenter3});
+  marker3.setMap(map);
+
+var myCenter4 = new google.maps.LatLng(40.442907, -79.941424);
+var marker4 = new google.maps.Marker({position:myCenter4});
+  marker4.setMap(map);
+
+var myCenter5 = new google.maps.LatLng(40.444263, -79.942164);
+var marker5 = new google.maps.Marker({position:myCenter5});
+  marker5.setMap(map);
+
+var marker6 = new google.maps.Marker({
+    position: (40.444241, -79.942163),
+    map: map,
+    title: 'Au Bon Pain'
+  });
+    marker6.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+  infowindow.open(map,marker);
+}
+
+</script>
+
+<script>
+    /*------CSS for title + navigation bar-------*/
+    html {
+        overflow-y: scroll;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    td a {
+        width: 100%;
+        display: block;
+        color: black;
+    }
+
+    #title-link {
+        color: red;
+    }
+
+    #website-title {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: -10px;
+        font-family: Verdana, "Verdana", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: red;
+    }
+
+    #website-subtitle {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-color: gray;
+        color: black;
+        font-size: 20px;
+        font-family: "Arial";
+    }
+
+    #header-bar {
+        border: none;
+        text-align: center;
+    }
+
+    #Review, #Blocks, #Map, #About {
+        border-width: thin;
+        border-right-style: solid;
+    }
+
+    .header-bar-cell {
+        width: 20%;
+        background-color: #f2f2f2
+    }
+
+    .header-bar-cell:hover {
+        background-color: #C8C8C8
+    }
+
+/*----End of CSS for title + navigation bar----*/
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKKZTmMv5sTrDYQ5GK5F8zxjCbtAYXB0&callback=myMap"></script>
+
+</body>
+</html>

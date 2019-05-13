@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+
+<HTML>
+    
+<title>
+    Food @ CMU: Write a Review
+</title>
+
+<!--------------HTML for title + navigation bar-------------->
+<h1 id = "website-title">
+    <a href = "main_page.html" id = "title-link" style = "text-decoration: none">
+        <b>FOOD @ CMU</b>
+    </a>
+</h1>
+
+
+<h2 id = "website-subtitle">
+    <table id = "header-bar" width = 100%>
+        <tr>
+            <td class = "header-bar-cell" id = "Review">
+                <a href = "review.html">
+                    Write a Review
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Blocks">
+                <a href = "donate.html">
+                    Donate Blocks
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Map">
+                <a href = "map.html">
+                    Map
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "About">
+                <a href = "about.html">
+                    About
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Login">
+                <a href = "login.html">
+                    Login
+                </a>
+            </td>
+        </tr>
+    </table>
+</h2>
+
+<!------------End of HTML for title + navigation bar----------->
+
+<style>
+    /*------CSS for title + navigation bar-------*/
+    html {
+        overflow-y: scroll;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    td a {
+        width: 100%;
+        display: block;
+        color: black;
+    }
+    
+    #title-link {
+        color: red;
+    }
+    
+    #website-title {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: -10px;
+        font-family: Verdana, "Verdana", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: red;
+    }
+    
+    #website-subtitle {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-color: gray;
+        color: black;
+        font-size: 20px;
+        font-family: "Arial";
+    }
+    
+    #header-bar {
+        border: none;
+        text-align: center;
+    }
+    
+    #Review, #Blocks, #Map, #About {
+        border-width: thin;
+        border-right-style: solid;
+    }
+    
+    .header-bar-cell {
+        width: 20%;
+        background-color: #f2f2f2
+    }
+    
+    .header-bar-cell:hover {
+        background-color: #C8C8C8
+    }
+    
+    /*----End of CSS for title + navigation bar----*/
+    
+    #review-title{
+        font-family: sans-serif;
+        color: black;
+        padding: 10px;
+        text-align:center;
+    }
+</style>
+<body>
+<h2 id = "review-title">Add a Review</h2>
+	<style>
+        #review-title{
+			font-family: sans-serif;
+			color: black;
+			padding: 10px;
+			text-align:center;
+		}
+		body{
+			text-align:center;
+		}
+	</style>
+
+<p>Restaurant:</p>
+	<style>
+		p{
+			font-family: arial;
+			color: black;
+			padding: 10px;
+			text-align:center	
+		}
+	</style>
+<select>
+	<option value="abp">Au Bon Pain</option>
+	<option value="burg uc">Bar Back Grill</option>
+	<option value="bibim">Bibimbop</option>
+	<option value="bowl">Bowl Life</option>
+	<option value="byob">BYOB</option>
+	<option value="cafe">Carnegie Mellon Cafe</option>
+	<option value="create">Create</option>
+	<option value="cucina">Cucina</option>
+	<option value="exchange">The Exchange</option>
+	<option value="fresh">Fresh52</option>
+	<option value="gallo">El Gallo de Oro</option>
+	<option value="ginger">Gingers Express</option>
+	<option value="heinz">Heinz Cafe</option>
+	<option value="innovation">Innovation Kitchen</option>
+	<option value="inoodle">iNoodle</option>
+	<option value="nakama">Nakama</option>
+	<option value="nourish">Nourish</option>
+	<option value="pom">Pomegranate</option>
+	<option value="prima">La Prima Expresso</option>
+	<option value="realwich">RealWich</option>
+	<option value="tazza">Rohr Cafe-Tazza D'Oro</option>
+	<option value="pure">Rohr Commons-Pure</option>
+	<option value="rooted">Rooted</option>
+	<option value="rothbergs">Rothberg's Roasters</option>
+	<option value="schatz">Schatz Dining</option>
+	<option value="seiber">Seiber Cafe</option>
+	<option value="marketc">Market C</option>
+	<option value="express">Tartan Express</option>
+	<option value="india">Taste of India</option>
+	<option value="underground">The Underground</option>
+	<option value="zebra">Zebra Lounge</option>
+
+
+
+
+</select>
+	
+
+
+<form action = "review_response.html" method post>
+	<p></p>
+	Display name:<br>
+	<br></br>
+	<input type="text" name="firstname"><br>
+</form>
+	<style>
+		form{
+			font-family: arial;
+			color: black;
+			padding: 10px;
+			text-align:center
+		}
+		input[type=submit] {
+    				background-color: #4CAF50; /* Green */
+    				border: none;
+    				color: white;
+    				padding: 10px 20px;
+                    text-align: center;
+    				text-decoration: none;
+    				display: inline-block;
+    				font-size: 16px;
+		}
+	</style>
+
+<p>Review:</p>
+<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+
+	<style>
+		.rating {
+  				unicode-bidi: bidi-override;
+  				direction: rtl;
+				text-align: center;
+		}
+		.rating > span {
+  					display: inline-block;
+  					position: relative;
+					width: 1.1em;
+		}
+		.rating > span:hover:before,
+		.rating > span:hover ~ span:before {
+   							content: "\2605";
+							position: absolute;
+		}
+		
+		
+	</style>
+
+<form action="review_response.php" method = "post">
+<form action="rev_thanks.html" method = "post">
+<form action="rev_thanks.html">
+	<input type="text" name="review">
+	<p></p>
+	<input type="submit" value="Submit">
+</form>
+	<style>	
+		input[name="review"] {
+				width: 160px;
+				height: 110px;
+				border: 1px solid #bfbfbf;
+				padding: 1px;
+		}
+    
+
+	</style>
+
+</body>
+	
+
+</html>

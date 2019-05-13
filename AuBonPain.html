@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: linen;
+}
+
+/*------CSS for title + navigation bar-------*/
+html {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+td a {
+    width: 100%;
+    display: block;
+    color: black;
+}
+
+#title-link {
+    color: red;
+}
+
+#website-title {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    font-family: Verdana, "Verdana", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+#website-subtitle {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: gray;
+    color: black;
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+#header-bar {
+    border: none;
+    text-align: center;
+}
+
+#Review, #Blocks, #Map, #About {
+    border-width: thin;
+    border-right-style: solid;
+}
+
+.header-bar-cell {
+    width: 20%;
+    background-color: #f2f2f2
+}
+
+.header-bar-cell:hover {
+    background-color: #C8C8C8
+}
+
+/*----End of CSS for title + navigation bar----*/
+
+h1 {
+    color: maroon;
+    text-align: center;
+} 
+
+h2 {
+    color: maroon;
+    font-size: 30px;
+    clear:left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    height="50";
+}
+    
+
+
+
+div.text {
+    padding: 10px;
+    border: 0px;
+    margin-top: 20px;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    float: left;
+    width: 45%;
+}
+
+div.vertical-menu {
+    padding: 10px;
+    float: left;
+    width: 30%;
+}
+
+.ad{
+    float: left;
+    width: 25%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.image{
+    float:left;
+}
+
+
+.rating{
+    clear:left;
+}
+    
+p.comments{
+    float:left;
+    border: 3px solid #9B9B97;
+    width:70%;
+    height:130px;
+    padding: 10px;
+    }
+
+
+div.vertical-menu a {
+    background-color: #FDB66F; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+div.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+div.others_ratings{
+    float:left;
+    width:70%
+}
+
+div.my_ratings{
+    float:left;
+    width:30%
+}
+
+.email{
+    margin-top: 50px;
+}
+
+</style>
+</head>
+
+<title>
+    Food @ CMU: Au Bon Pain
+</title>
+
+<!--------------HTML for title + navigation bar-------------->
+<h1 id = "website-title">
+    <a href = "main_page.html" id = "title-link" style = "text-decoration: none">
+        <b>FOOD @ CMU</b>
+    </a>
+</h1>
+
+
+<h2 id = "website-subtitle">
+    <table id = "header-bar" width = 100%>
+        <tr>
+            <td class = "header-bar-cell" id = "Review">
+                <a href = "review.html">
+                    Write a Review
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Blocks">
+                <a href = "donate.html">
+                    Donate Blocks
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Map">
+                <a href = "map.html">
+                    Map
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "About">
+                <a href = "about.html">
+                    About
+                </a>
+            </td>
+            <td class = "header-bar-cell" id = "Login">
+                <a href = "login.html">
+                    Login
+                </a>
+            </td>
+        </tr>
+    </table>
+</h2>
+
+<!------------End of HTML for title + navigation bar----------->
+
+<body>
+<h1>Au Bon Pain at Skibo Cafe</h1>
+
+<img src="abp1.jpg"/ alt="abp1" width="200" height="150">
+
+<img src="abp2.jpg"/ alt="abp2" width="200" height="150">
+
+<img src="Au Bon Pain.jpg"/ alt="abp6" width="400" height="150">
+
+<img src="abp4.jpg"/ alt="abp3" width="200" height="150">
+
+<img src="abp3.jpg"/ alt="abp2" width="210" height="150">
+
+
+<div class="clearfix">
+<div class="ad">
+<p>Monday,  7:00 AM - 2:00 AM </p>
+<p>Tuesday,  7:00 AM - 2:00 AM</p> 
+<p>Wednesday,  7:00 AM - 2:00 AM </p>
+<p>Thursday,  7:00 AM - 2:00 AM</p>
+<p>Friday,  7:00 AM - 2:00 AM</p> 
+<p>Saturday,  9:00 AM - 9:00 PM</p> 
+<p>Sunday,  9:00 AM - 2:00 AM </p>
+</div>
+
+
+<div class="text">At Au Bon Pain cafe bakery, each signature recipe is uniquely crafted. You can enjoy delicious hot or iced coffee and teas, espresso drinks, a variety of cold beverages,
+soup, a customized made-to-order breakfast or lunch sandwich or salad, or you can grab a pre-made salad, sandwich, wrap, yogurt parfait, fresh fruit or snack.
+ There is always something new to try ... healthy choices, comfort food, indulgent treats - try them all!</div>
+
+
+<div class="vertical-menu">
+  <a href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/conceptAssets/menus/AuBonPain_%20Fall%202018.pdf">View Menu</a>
+  <a href="https://www.google.com/maps/place/40%C2%B026'38.8%22N+79%C2%B056'31.9%22W/@40.444107,-79.942206,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.444107!4d-79.942206">Map It</a>
+  <a href="#">Question or Comment?</a>
+  <a href="https://www.aubonpain.com/nutrition">Nutritional Facts</a>
+</div>
+
+</div>
+
+<h2>Ratings and Reviews</h2>
+<div class="others_ratings">
+<div class="rating">
+<img class="image" src="image3.png" width="130" height="130" style="margin-right:20px; margin-left:20px; margin-top: 15px">
+<p class="comments" style="padding-top: 10px"><b>CMU Athlete:</b></br>One of the most popular places on campus. There are many tables behind the restaurant where many students study. Very convenient dining place.</p>
+</div>
+<div class="rating">
+<img class="image" src="image3.png" width="130" height="130" style="margin-right:20px; margin-left:20px; margin-top: 15px">
+<p class="comments" style="padding-top: 10px"><b>Happy Teenager:</b></br>Would normally go here for breakfast. The soup and man n'cheese are also unique and popular among the various food options.</p></p>
+</div>
+<div class="rating">
+<img class="image" src="image3.png" width="130" height="130" style="margin-right:20px; margin-left:20px; margin-top: 15px">
+<p class="comments" style="padding-top: 10px"><b>CMU User:</b></br>There's usually a long line and sometimes there aren't that many people on shift fasten the wait. I once had to wait twenty minutes to get my ordered sandwich.</p></p>
+</div>
+<div class="rating">
+<img class="image" src="image3.png" width="130" height="130" style="margin-right:20px; margin-left:20px; margin-top: 15px">
+<p class="comments" style="padding-top: 10px"><b>Anonymous:</b></br>I really like the lemonade and strawberry refreshments. Most people also come fo their smooth and original coffee.</p>
+</div>
+</div>
+
+<div class="my_ratings">
+<h2>Leave a rating!</h2>
+<form action="www.baidu.com">
+  <input type="radio" name="rating" value="5 star" > 5 Star<br>
+  <input type="radio" name="rating" value="4 star"> 4 Star<br>
+  <input type="radio" name="rating" value="3 start"> 3 Star<br>
+  <input type="radio" name="rating" value="5 star" > 2 Star<br>
+  <input type="radio" name="rating" value="4 star"> 1 Star<br>
+  <input type="submit" value="submit">
+</form>
+<div class="email">
+<h2>Leave your email for contanct!</h2>
+<form action="/action_page.php">
+  E-mail:
+  <input type="email" name="email">
+  <input type="submit" value="submit">
+</form>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
